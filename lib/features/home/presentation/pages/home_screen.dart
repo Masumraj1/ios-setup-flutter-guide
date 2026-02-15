@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:qorum/features/home/presentation/controller/home_controller.dart';
 
+import 'bottom.dart';
 import 'clippath_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -35,10 +36,15 @@ class HomeScreen extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
+            // Navigator.push(
+            //   context,
+            //   MaterialPageRoute(builder:
+            //       (buildContext) => ClippathScreen()),
+            // );
             Navigator.push(
               context,
               MaterialPageRoute(builder:
-                  (buildContext) => ClippathScreen()),
+                  (buildContext) => ModernDashboard()),
             );
           },
           child: Text('Go'),
